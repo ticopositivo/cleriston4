@@ -1,0 +1,256 @@
+body {
+  background-color: #fff1a0; /* Altere para a cor desejada */
+}
+
+/* Estilos para a Galeria */
+img{
+  width: 150px;
+  height: 150px;
+  border: 1px solid #d1a672; 
+  border-radius: 100px;
+  background-color: aliceblue
+}
+.galeria {
+  padding: 20px ;
+  
+}
+@font-face {
+  font-family: SpicyRice-Regular;
+  src: url('SpicyRice-Regular.ttf');
+}
+
+.topo{
+  font-family: 'SpicyRice-Regular', sans-serif;
+  color: #d1a672;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  text-decoration-line:underline;
+  font-size:large;
+ 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+ 
+  
+  
+}
+.logo-container {
+  
+}
+
+
+
+
+
+/* Remover sublinhados dos links */
+a {
+  text-decoration: none;
+}
+/* Estilo para os botões */
+.botoes {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Centralize os itens na horizontal */
+  margin-bottom: 20px;
+}
+
+/* Estilo para os botões individuais */
+.botao {
+  margin-right: 10px; /* Adicione um espaço entre os botões */
+}
+
+/* Estilo para o botão "Contato" */
+.botao-contato {
+  background-color: #d1a672; /* Cor de fundo do botão de contato */
+  color: #000000; /* Cor do texto branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  text-decoration: none; /* Remover sublinhado */
+  font-weight: bolder;
+  box-shadow: 4px 8px 1px rgb(0, 0, 0);
+}
+
+.botao-contato:hover {
+  background-color: #ebc9a0; /* Cor verde escura quando hover */
+}
+
+/* Estilo para o botão "Sobre Nós" */
+.botao-sobre {
+  background-color: #d1a672; /* Cor de fundo azul */
+  color: #000000; /* Cor do texto branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  text-decoration: none; /* Remover sublinhado */
+  font-weight: bolder;
+  box-shadow: 4px 8px 1px rgb(0, 0, 0);
+}
+
+.botao-sobre:hover {
+  background-color: #ebc9a0; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para o botão "Home" */
+.botao-sobre:nth-child(1) {
+  background-color: #d1a672; /* Cor de fundo vermelha para o botão "Home" */
+  color: #000000; /* Cor do texto branco */
+  font-weight: bolder;
+}
+
+/* Estilos para o botão "Produtos" */
+.botao-sobre:nth-child(2) {
+  background-color: #d1a672; /* Cor de fundo verde para o botão "Produtos" */
+  color: #000000; /* Cor do texto branco */
+  font-weight: bold;
+}
+
+/* Mudança de cor ao passar o mouse */
+.botao-sobre:hover {
+  background-color: #ebc9a0; /* Cor azul ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: ##fff1a0; /* Cor de fundo do rodapé */
+  color: #000000; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  transition: opacity 0.5s ease; /* Adiciona uma transição de opacidade */
+  opacity: 0; /* Começa com opacidade zero */
+}
+
+.rodape-show {
+  opacity: 1; /* Mostra o rodapé quando a classe 'rodape-show' é aplicada */
+}
+
+/* Estilo para o conteúdo da história */
+.historia {
+  margin-bottom: 200px; /* Defina a margem inferior para a altura do rodapé */
+}
+
+
+/* Estilos para o ícone do carrinho */
+.carrinho {
+  position: fixed;
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  font-size: 24px; /* Tamanho do ícone */
+  color: #000; /* Cor do ícone */
+  display: flex;
+  align-items: center;
+}
+/* Estilos para o ícone do carrinho */
+.carrinho img {
+  width: 40px; /* Ajuste conforme necessário */
+  height: 40px; /* Ajuste conforme necessário */
+}
+/* Estilos para a barra de pesquisa */
+.pesquisa {
+  display: flex; /* Utilize flexbox para alinhar itens horizontalmente */
+  align-items: center; /* Alinhe os itens verticalmente */
+}
+
+.pesquisa input[type="text"] {
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 8px 12px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda sólida com cor cinza */
+  outline: none; /* Remover contorno ao focar */
+}
+
+.pesquisa input[type="text"]:focus {
+  border-color: #007bff; /* Cor da borda ao focar */
+}
+
+
+.botao-adicionar {
+  background-color: #d1a672;
+  color: #000000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+  box-shadow: 4px 8px 1px rgb(0, 0, 0);
+  
+}
+
+.botao-adicionar:hover {
+  background-color: #ebc9a0;
+}
+.carrinho-container {
+  position: fixed;
+  top: -10px;
+  right: 50px;
+  padding: 10px;
+}
+
+/* Estilos para a contagem no carrinho */
+.carrinho .carrinho-contagem {
+  position: absolute;
+  top: -10px; /* Ajuste conforme necessário */
+  right: -10px; /* Ajuste conforme necessário */
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border-radius: 50%; /* Borda circular */
+  padding: 5px; /* Espaçamento interno */
+  font-size: 12px; /* Tamanho do texto */
+}
+
+/* Estilo para centralizar o texto "Nossos Produtos" */
+.galeria h2 {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.topo h1{
+  text-align: left;
+}
+.logo h1 {
+  margin: 0; /* Remove margens padrão */
+}
+
+/* CSS para centralizar e ampliar o slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 800px; /* Largura máxima do slideshow */
+  margin: 0 auto; /* Centralizar o slideshow na página */
+}
+
+.slide-image {
+  width: 100%; /* Ampliar a imagem para preencher o contêiner */
+  height: auto; /* Mantém a proporção de aspecto */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Estilo para o conteúdo da história */
+.historia p {
+  font-size: 25px; /* Defina o tamanho da fonte desejado */
+}
